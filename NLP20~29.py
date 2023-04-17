@@ -3,7 +3,7 @@ import re
 import requests
 
 #20.JSONデータの読み込み
-with open('./Desktop/NLP100/jawiki-country.json', mode='r') as f:
+with open('jawiki-country.json', mode='r') as f:
     for line in f:
         line = json.loads(line)
         if line['title'] == 'イギリス':
